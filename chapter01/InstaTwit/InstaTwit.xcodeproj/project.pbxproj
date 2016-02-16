@@ -195,7 +195,7 @@
 			name = InstaTwitTests;
 			productName = InstaTwitTests;
 			productReference = DA87D044170F6534007D4CE9 /* InstaTwitTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -203,7 +203,8 @@
 		DA87D016170F6534007D4CE9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastTestingUpgradeCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Element 84, LLC";
 			};
 			buildConfigurationList = DA87D019170F6534007D4CE9 /* Build configuration list for PBXProject "InstaTwit" */;
@@ -332,6 +333,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -383,6 +385,7 @@
 				GCC_PREFIX_HEADER = "InstaTwit/InstaTwit-Prefix.pch";
 				INFOPLIST_FILE = "InstaTwit/InstaTwit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.element84.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -397,6 +400,7 @@
 				GCC_PREFIX_HEADER = "InstaTwit/InstaTwit-Prefix.pch";
 				INFOPLIST_FILE = "InstaTwit/InstaTwit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.element84.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -413,6 +417,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InstaTwit/InstaTwit-Prefix.pch";
 				INFOPLIST_FILE = "InstaTwitTests/InstaTwitTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.element84.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -430,6 +435,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InstaTwit/InstaTwit-Prefix.pch";
 				INFOPLIST_FILE = "InstaTwitTests/InstaTwitTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.element84.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
